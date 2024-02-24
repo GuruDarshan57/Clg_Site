@@ -1,0 +1,34 @@
+.course{
+    height: 100px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.09);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.course h3{
+    font-weight: normal;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-bottom: solid 2px yellow;
+}
+.course:hover{
+    transform: scale(1.02);
+}
+@media(max-width:450px){
+    .course{
+        height: 90px;
+        width: 290px;
+    }
+    .course h3{
+        font-size: 13px;
+    }
+    .course p{
+        font-size: 11px;
+    }
+}

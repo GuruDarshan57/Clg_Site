@@ -1,0 +1,86 @@
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    z-index: 2;
+}
+.navbar_con{
+    width: 80%;
+    
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.121);
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+}
+.navbar a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+.navbar_logo a{
+    font-size: 25px;
+    letter-spacing: 8px;
+    font-family: "Cormorant", serif;
+    color: yellow;
+}
+.navbar_links{
+    display: flex;
+    gap: 30px;
+}
+.act{
+    border-bottom: solid 4px greenyellow;
+    border-radius: 4px;
+}
+.navbar a:hover{
+    color: rgb(97, 206, 246);
+}
+.menu{
+    display: grid;
+    place-items: center;
+}
+.menu i{
+    font-size: 23px;
+}
+.hide,.hide1{
+    display: none;
+}
+hr{
+    width: 100%;
+    margin: 20px 0;
+}
+@media(max-width:450px){
+    .navbar_con{
+        width: 90%;
+        flex-direction: column;
+    }
+    .navbar_logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar_logo a{
+        font-size: 21px;
+        letter-spacing: 6px;
+    }
+    .navbar_links{
+        display: none;
+    }
+    .hide{
+        display: flex;
+    }
+}
+
+.navbar_link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+}
+.unhide{
+    display: block;
+}
